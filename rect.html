@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rect</title>
+    <style>
+        .content {
+            width: 100%;
+        }
+
+        .content>div {
+            float: left;
+            width: 200px;
+            height: 240px;
+            margin: 20px;
+        }
+
+        .content>div>div {
+            height: 200px;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #EAFFD0;
+        }
+
+        h2 {
+            color: #0B5269;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div>
+            <div>
+                <svg width="100%" height="100%">
+                    <rect width='200' height='200' fill='#F38181' style="stroke:#FCE38A;stroke-width:5;"></rect>
+                </svg>
+            </div>
+            <h2>矩形</h2>
+        </div>
+        <div>
+            <div>
+                <svg width="100%" height="100%">
+                    <rect width='100px' height='100px' x='50' y='50' fill='#F38181' style="fill-opacity:0.5;stroke-opacity:0.3"></rect>
+                </svg>
+            </div>
+            <h2>偏移过后的矩形</h2>
+        </div>
+        <div>
+            <div>
+                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect width='100' height='100' rx='100' ry='100' x='50' y='50' style='fill:#F38181;' />
+                </svg>
+            </div>
+            <h2>带圆角的矩形</h2>
+        </div>
+    </div>
+</body>
+
+</html>
